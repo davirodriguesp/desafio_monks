@@ -40,18 +40,6 @@ O **backend** é construído com **Node.js + Express**, enquanto o **frontend** 
 
 ---
 
-## 📸 Demonstração
-
-> Adicione aqui prints ou um vídeo/gif da aplicação em funcionamento.
-
-Exemplos:
-
-* Tela de login e registro
-* Dashboard com filtros e paginação
-* Diferença entre admin e user
-
----
-
 ## 🛠️ Tecnologias Utilizadas
 
 ### Backend
