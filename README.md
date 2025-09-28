@@ -148,8 +148,6 @@ Desafio_Monks/
 └── README.md            # Documentação
 ```
 
----
-
 
 ---
 
