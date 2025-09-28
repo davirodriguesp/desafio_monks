@@ -116,12 +116,12 @@ O frontend estará em **[http://localhost:5173](http://localhost:5173)**
 
 ### Administrador
 
-* **Email:** [admin@monks.com](mailto:admin@monks.com)
+* **Usuário:** [admin@monks.com](mailto:admin@monks.com)
 * **Senha:** admin123
 
 ### Usuário Comum
 
-* **Email:** [user2](user2)
+* **Usuário:** [user2](user2)
 * **Senha:** 908ijofff
 
 ---
