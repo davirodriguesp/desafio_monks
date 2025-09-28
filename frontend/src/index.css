@@ -1,0 +1,75 @@
+/* Reset básico e configurações globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  /* Remover configurações de dark mode que conflitam */
+  color-scheme: light;
+  color: #1f2937;
+  background-color: #ffffff;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reset do body para não interferir com Tailwind */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  /* Remover display: flex e place-items que estavam centralizando tudo */
+}
+
+/* Reset de elementos que podem conflitar */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+/* Garantir que o root container ocupe toda a tela */
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+input, button, select, textarea {
+  font-family: inherit;
+}
+
+/* Garantir que links funcionem normalmente */
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* Remover todos os estilos personalizados de botão que estavam conflitando */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+/* Garantir scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Para garantir que elementos com position fixed funcionem bem */
+body {
+  overflow-x: hidden;
+}
