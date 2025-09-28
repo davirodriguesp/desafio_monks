@@ -76,12 +76,12 @@ O **backend** é construído com **Node.js + Express**, enquanto o **frontend** 
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/monks-analytics.git
+   git clone https://github.com/seu-usuario/desafio_monks.git
    ```
 2. Acesse a pasta do projeto:
 
    ```bash
-   cd monks-analytics
+   cd desafio_monks
    ```
 
 ---
