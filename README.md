@@ -1,117 +1,257 @@
-# ⚡ Projeto Desafio
+📊 Monks Analytics Dashboard
 
-[![Node.js Badge](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge\&logo=node.js\&logoColor=white)](https://nodejs.org/)
-[![React Badge](https://img.shields.io/badge/React-61DAFB?style=for-the-badge\&logo=react\&logoColor=black)](https://reactjs.org/)
-[![NPM Badge](https://img.shields.io/badge/npm-CB3837?style=for-the-badge\&logo=npm\&logoColor=white)](https://www.npmjs.com/)
+✨ Visão Geral do Projeto
 
-Aplicação fullstack com **backend em Node.js** e **frontend em React**.
+Este projeto é uma aplicação fullstack desenvolvida para simular um Dashboard de Performance para campanhas de marketing digital, denominado Monks Analytics. Ele oferece funcionalidades de autenticação (login e registro) e uma interface para visualização de métricas, com diferenciação de acesso para usuários comuns e administradores. O backend é construído com Node.js e Express, enquanto o frontend utiliza React para uma experiência de usuário moderna e interativa.
 
----
+O objetivo principal é demonstrar a integração entre um servidor Node.js que serve dados (incluindo filtros, ordenação e paginação) e uma aplicação React que consome e exibe esses dados de forma dinâmica. A aplicação também ilustra o uso de autenticação baseada em papéis (roles) para controlar o acesso a informações sensíveis, como custos de campanha.
 
-## 📸 Demonstração
+🚀 Funcionalidades Principais
 
-> *(Adicione aqui prints ou link de vídeo/gif mostrando a aplicação rodando)*
+O Monks Analytics oferece as seguintes funcionalidades:
 
----
+•
+Autenticação de Usuários:
 
-## 🚀 Funcionalidades
+•
+Login: Usuários podem fazer login com credenciais existentes.
 
-✅ API Node.js para o backend
-✅ Frontend em React com interface moderna
-✅ Integração entre backend e frontend
+•
+Registro: Novos usuários podem se cadastrar, escolhendo entre os papéis de user (usuário comum) ou admin (administrador).
 
----
+•
+Controle de Acesso Baseado em Papéis (RBAC): Diferenciação de funcionalidades e visualização de dados com base no papel do usuário logado.
 
-## 🛠️ Tecnologias Utilizadas
 
-* **Node.js + Express** – Backend da aplicação
-* **React** – Frontend da aplicação
-* **npm** – Gerenciamento de dependências
 
----
+•
+Dashboard de Métricas:
 
-## 💻 Como Rodar o Projeto Localmente
+•
+Visualização de Dados: Exibe uma tabela com métricas de campanhas de marketing digital (impressões, cliques, conversões, CTR, etc.).
 
-Siga os passos abaixo para rodar backend e frontend na sua máquina.
+•
+Filtros: Permite filtrar as métricas por data.
 
-### Pré-requisitos
+•
+Ordenação: Possibilidade de ordenar a tabela por qualquer coluna disponível.
 
-* [Node.js](https://nodejs.org/) (versão 14 ou superior)
-* npm (vem junto com o Node.js)
+•
+Paginação: Navegação entre páginas de resultados para lidar com grandes volumes de dados.
 
-### Passos
+•
+Estatísticas Agregadas: Apresenta cards com totais e médias de métricas importantes (ex: Total de Impressões, CTR Médio).
 
-1. Clone o repositório:
+•
+Dados Sensíveis: A coluna cost_micros (custo em micro-centavos) é visível apenas para usuários com o papel de admin.
 
-   ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   ```
-2. Acesse a pasta do projeto:
 
-   ```bash
-   cd seu-repositorio
-   ```
 
----
+•
+Tecnologias Modernas:
 
-### 🔹 Rodando o Backend
+•
+Backend: API RESTful robusta com Node.js e Express.
 
-```bash
-cd backend
-npm install
-npm start
-```
+•
+Frontend: Interface de usuário dinâmica e reativa com React.
 
-O backend será iniciado em: **[http://localhost:5000](http://localhost:5000)**
+•
+Estilização: Utiliza Tailwind CSS para um design responsivo e personalizável.
 
----
+•
+Ícones: Biblioteca Lucide React para ícones vetoriais.
 
-### 🔹 Rodando o Frontend
 
-Em outro terminal:
 
-```bash
-cd frontend
-npm install
-npm run dev
-```
+📸 Demonstração
 
-O frontend estará disponível em: **[http://localhost:5173](http://localhost:5173)**
+Para uma melhor compreensão da aplicação em funcionamento, adicione aqui capturas de tela (screenshots) ou um GIF/vídeo curto mostrando as principais funcionalidades, como:
 
----
+•
+A tela de login e registro.
 
-## 📁 Estrutura do Projeto
+•
+O dashboard com as métricas, filtros e paginação.
 
-```
-projeto-desafio/
+•
+A diferença na visualização de dados entre um usuário admin e um user (especialmente a coluna de custos).
+
+(Exemplo: Adicione um link para um vídeo no YouTube ou um GIF animado aqui)
+
+🛠️ Tecnologias Utilizadas
+
+Este projeto foi construído utilizando as seguintes tecnologias:
+
+Backend:
+
+•
+Node.js: Ambiente de execução JavaScript server-side.
+
+•
+Express.js: Framework web para Node.js, utilizado para construir a API RESTful.
+
+•
+CORS: Middleware para habilitar o Cross-Origin Resource Sharing.
+
+•
+CSV-Parser: Biblioteca para leitura e processamento de arquivos CSV.
+
+•
+FS (File System): Módulo nativo do Node.js para interação com o sistema de arquivos (leitura/escrita de CSVs).
+
+Frontend:
+
+•
+React: Biblioteca JavaScript para construção de interfaces de usuário.
+
+•
+Vite: Ferramenta de build frontend rápida e otimizada.
+
+•
+Tailwind CSS: Framework CSS utilitário para estilização rápida e responsiva.
+
+•
+Lucide React: Biblioteca de ícones moderna e personalizável.
+
+Gerenciamento de Pacotes:
+
+•
+npm: Gerenciador de pacotes padrão para Node.js.
+
+💻 Como Rodar o Projeto Localmente
+
+Siga os passos abaixo para configurar e rodar o backend e o frontend na sua máquina local.
+
+Pré-requisitos
+
+Certifique-se de ter as seguintes ferramentas instaladas:
+
+•
+Node.js: Versão 14 ou superior. Você pode baixá-lo em nodejs.org.
+
+•
+npm: Geralmente vem junto com a instalação do Node.js.
+
+•
+Git: Para clonar o repositório. Baixe em git-scm.com.
+
+Passos de Configuração
+
+1.
+Clone o repositório:
+
+2.
+Acesse a pasta raiz do projeto:
+
+🔹 Rodando o Backend
+
+O backend é responsável por servir a API que fornece os dados de métricas e gerencia a autenticação.
+
+1.
+Navegue até o diretório do backend:
+
+2.
+Instale as dependências do backend:
+
+3.
+Inicie o servidor backend:
+
+🔹 Rodando o Frontend
+
+O frontend é a aplicação React que consome a API do backend e exibe o dashboard.
+
+1.
+Abra um novo terminal e navegue de volta para a pasta raiz do projeto, depois para o diretório do frontend:
+
+2.
+Instale as dependências do frontend:
+
+3.
+Inicie a aplicação frontend:
+
+Credenciais de Teste
+
+Para testar as funcionalidades de login e os diferentes papéis, utilize as seguintes credenciais:
+
+•
+Administrador:
+
+•
+Email: admin@monks.com
+
+•
+Senha: admin123
+
+
+
+•
+Usuário Comum:
+
+•
+Email: user@monks.com
+
+•
+Senha: user123
+
+
+
+📁 Estrutura do Projeto
+
+Plain Text
+
+
+Desafio_Monks/
 │
 ├── backend/             ## Código do servidor (Node.js + Express)
-│   ├── routes/          ## Rotas da API
-│   ├── controllers/     ## Lógica das requisições
-│   ├── server.js        ## Ponto de entrada do backend
-│   └── package.json
+│   ├── metrics.csv      ## Arquivo CSV com dados de métricas de exemplo
+│   ├── users.csv        ## Arquivo CSV para persistência de usuários (criado/atualizado no registro)
+│   ├── server.js        ## Ponto de entrada da API RESTful
+│   └── package.json     ## Metadados e dependências do backend
 │
 ├── frontend/            ## Aplicação React
-│   ├── src/             ## Código-fonte React
-│   ├── public/          ## Arquivos estáticos
-│   └── package.json
+│   ├── public/          ## Arquivos estáticos (HTML, imagens, etc.)
+│   ├── src/             ## Código-fonte da aplicação React
+│   │   ├── components/  ## Componentes reutilizáveis (NavBar, MetricsTable, StatsCard)
+│   │   ├── pages/       ## Páginas da aplicação (LoginPage, DashboardPage)
+│   │   └── App.jsx      ## Componente raiz da aplicação React
+│   └── package.json     ## Metadados e dependências do frontend
 │
-└── README.md            ## Este arquivo :)
-```
+└── README.md            ## Este arquivo de documentação
 
----
 
-## 📋 Como Contribuir
+📋 Como Contribuir
 
-1. Faça um Fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/minha-feature`)
-3. Commit suas alterações (`git commit -m 'Adiciona minha feature'`)
-4. Faça push para a branch (`git push origin feature/minha-feature`)
-5. Abra um Pull Request 🚀
+Contribuições são muito bem-vindas! Se você deseja melhorar este projeto, siga os passos abaixo:
 
----
+1.
+Faça um Fork do repositório para sua conta no GitHub.
 
-## 🙋‍♂️ Autor
+2.
+Clone o seu Fork para sua máquina local.
 
-Feito com 💻 por **Davi Rodrigues**
-👉 [LinkedIn](https://www.linkedin.com) | [GitHub](https://github.com/seu-usuario)
+3.
+Crie uma nova branch para sua feature ou correção de bug:
+
+4.
+Faça suas alterações e teste-as cuidadosamente.
+
+5.
+Commit suas alterações com uma mensagem clara e descritiva:
+
+6.
+Envie suas alterações para o seu Fork no GitHub:
+
+7.
+Abra um Pull Request (PR) do seu Fork para o repositório original, descrevendo suas alterações e o problema que elas resolvem.
+
+📄 Licença
+
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
+
+🙋‍♂️ Autor
+
+Feito com ❤️ e 💻 por Davi Rodrigues
+
+Conecte-se comigo:
+👉 [LinkedIn](https://www.linkedin.com/in/davi-rodrigues-petronilho-aa4b9319a/) 
