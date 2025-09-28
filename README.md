@@ -150,13 +150,6 @@ Desafio_Monks/
 
 ---
 
-## 📋 Como Contribuir
-
-1. Faça um **Fork** do projeto
-2. Crie uma **Branch** (`git checkout -b feature/minha-feature`)
-3. Faça suas alterações e **Commit** (`git commit -m 'Adiciona minha feature'`)
-4. Faça **Push** (`git push origin feature/minha-feature`)
-5. Abra um **Pull Request** 🚀
 
 ---
 
