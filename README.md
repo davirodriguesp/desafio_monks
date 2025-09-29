@@ -1,5 +1,8 @@
 # 📊 Monks Analytics Dashboard
 
+[![Node.js Badge](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge\&logo=node.js\&logoColor=white)](https://nodejs.org/)
+[![React Badge](https://img.shields.io/badge/React-61DAFB?style=for-the-badge\&logo=react\&logoColor=black)](https://reactjs.org/)
+
 ## ✨ Visão Geral do Projeto
 
 Este projeto é uma aplicação **fullstack** desenvolvida para simular um **Dashboard de Performance** para campanhas de marketing digital, denominado **Monks Analytics**.
